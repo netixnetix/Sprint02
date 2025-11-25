@@ -9,7 +9,6 @@ public abstract class Food {
         this.amount = amount;
         this.price = price;
         this.isVegetarian = isVegetarian;
-
     }
 
     public boolean isVegetarian(){

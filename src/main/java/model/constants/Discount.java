@@ -14,6 +14,5 @@ public class Discount implements Discountable {
             }
         }
         return foods.getPrice();
-
     }
 }

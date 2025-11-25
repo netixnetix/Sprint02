@@ -1,5 +1,4 @@
 package model;
-
 import model.constants.Colour;
 
 public class Apple extends Food {

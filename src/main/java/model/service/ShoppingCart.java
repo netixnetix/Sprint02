@@ -2,7 +2,6 @@ package model.service;
 import model.Food;
 import model.constants.Discount;
 
-
 public class ShoppingCart {
 
     protected Food[] ShoppingItemCart;
