@@ -17,7 +17,7 @@ public class Main {
 
         System.out.println("Общая сумма без скидки: " + shoppingCart.getTotalPrice());
         System.out.println("Стоимость со скидками: " + shoppingCart.getDiscountedPrice());
-        System.out.println("Вегетарианские товары цена: " + shoppingCart.getVeganPrice());
+        System.out.println("Вегетарианские товары сумма: " + shoppingCart.getVeganPrice());
     }
 
     }
