@@ -23,6 +23,6 @@ public class Apple extends Food {
         if (isRed()) {
             return Discount.APPLE_RED_DISCOUNT; // скидка 60%
         }
-        return model.constants.Discount.DEFAULT; // без скидки
+        return Discount.DEFAULT; // без скидки
     }
 }
