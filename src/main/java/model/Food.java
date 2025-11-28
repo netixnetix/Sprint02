@@ -1,26 +1,28 @@
 package model;
 
-public abstract class Food {
-    private boolean isVegetarian;
-    private int amount;
-    private float price;
+public abstract class Food implements Discountable {
+    protected int amount;
+    protected float price;
+    protected boolean isVegetarian;
 
-    public Food(int amount, float price, boolean isVegetarian){
+    protected Food(int amount, float price, boolean isVegetarian) {
         this.amount = amount;
         this.price = price;
         this.isVegetarian = isVegetarian;
     }
 
-    public boolean isVegetarian(){
-        return this.isVegetarian;
+    public int getAmount() {
+        return amount;
     }
 
-    public int getAmount(){
-        return this.amount;
+    public float getPrice() {
+        return price;
     }
 
-    public float getPrice(){
-        return this.price;
+    public boolean isVegetarian() {
+        return isVegetarian;
     }
 
+    @Override
+    public abstract float getDiscount();
 }

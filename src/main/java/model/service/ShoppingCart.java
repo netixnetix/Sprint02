@@ -23,11 +23,13 @@ public class ShoppingCart {
         float SummaDiscountedPrice = 0;
         Discount discount = new Discount();
         for (Food food : ShoppingItemCart) {
-            SummaDiscountedPrice += discount.getDiscount(food)* food.getAmount();
+
+            SummaDiscountedPrice += food.getDiscount()* food.getAmount();
         }
         return SummaDiscountedPrice;
 
     }
+
 
     public float getVeganPrice(){
         float VeganTotalPrice = 0;
