@@ -24,7 +24,7 @@ public class ShoppingCart {
         Discount discount = new Discount();
         for (Food food : ShoppingItemCart) {
 
-            SummaDiscountedPrice += food.getDiscount()* food.getAmount();
+            SummaDiscountedPrice += food.getPrice()*food.getDiscount()*food.getAmount();
         }
         return SummaDiscountedPrice;
 
